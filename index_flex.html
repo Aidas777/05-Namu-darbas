@@ -8,15 +8,21 @@
         <title>Pagrindinis Aido Flex</title>
         <style>
 
-            .flex-containeris100 {
+            .flex-containeris {
                 display: flex;
-                flex-wrap: nowrap;
-                width: 100%;
+                flex-wrap: wrap;
+                flex-direction: row;
                 /* background-color: dodgerblue; */
 
 
             }
-            .Boxas50 {
+
+            @media all and (max-width: 720px) {
+                .flex-containeris {
+                    flex-flow: column wrap;
+                }
+            }
+            .Flex-itemas1 {
                 width: 50%;
             }
             .Boxas70 {
@@ -40,6 +46,13 @@
                 background-color: aquamarine !important;
                 
             }
+
+            /* [class*="Boxas"] {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            } */
 
 
             body {
@@ -83,25 +96,7 @@
             .antra {
                 background-color: rgb(0, 255, 21);
             }
-            .eil100 {
-                width: 100%;
-            }
-            .eil50 {
-                width: 50%;
-                /* float: left; */
-            }
-            .eil70 {
-                width: 70%;
-                /* float:left */
-            }
-            .eil30 {
-                width: 30%;
-                /* float: left; */
-            }
-            .eil30Proc {
-                width: 30.33%;
-                /* float: left; */
-            }
+
             p {
                 font-size: 12px;
                 color: darkgrey;
@@ -111,8 +106,20 @@
                 height: 300px;
             }
             .besimb {
-                list-style-type: none;
+                list-style: none;
             }
+            p:hover {
+                background-color:cornflowerblue ;
+                font-size: 20px;
+                color: darkblue;
+            }
+            .Pklase:active {
+                background-color: lightseagreen;
+                font-style: italic;
+                color: black;
+                font-size: 56px;
+            }
+            
 
         </style>
 
@@ -127,17 +134,17 @@
             <!-- <p id='u-paragraph'>Unikalus paragrafas</p> -->
 
             <!-- Eilute su stulpeliais  -->
-            <div class='flex-containeris100'>
+            <div class='flex-containeris'>
                 <!-- <div class='flex-containeris'> -->
-                <div class='Boxas50 BoxPilk'>
-                <p>Stulpelis</p><br>
-                <p>Stulpelis</p><br>
-                <p>Stulpelis</p><br>
-                <p>Stulpelis</p><br>
-                <p>Stulpelis</p>     
+                <div class='Flex-itemas1 BoxPilk'>
+                    <p>Stulpelis</p><br>
+                    <p>Stulpelis</p><br>
+                    <p>Stulpelis</p><br>
+                    <p>Stulpelis</p><br>
+                    <p>Stulpelis</p>     
                 </div>
                 <!-- <div class='flex-containeris'> -->
-                <div class='Boxas50 BoxAqua'>
+                <div class='Flex-itemas1 BoxAqua'>
                     <p>Stulpelis</p> 
                 </div>
             </div>
@@ -150,10 +157,10 @@
         <br>
         
         <!-- ANTRA EIL DOWN -->
-        <div class='flex-containeris100'>
-            <div class='Boxas50'>
-                <h1>This is a Heading</h1>
-                <h2>This is a Heading</h2>
+        <div class='flex-containeris'>
+            <div class='Flex-itemas1'>
+                <h1 class='Pklase'>This is a Heading</h1>
+                <h2 class='Pklase'>This is a Heading</h2>
                 <h2>This is a Heading</h2>
                 <h3>This is a Heading</h3>
                 <h4>This is a Heading</h4>
@@ -161,7 +168,7 @@
                 <h6>This is a Heading</h6>
                 <p>Tekstas su zyma p</p>
             </div>
-            <div class='Boxas50'>
+            <div class='Flex-itemas1'>
             <p>Vivamus magna justo, lacinia eget consectetur sed, 
                 convallis at tellus. <br> Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. 
                 Nulla quis lorem ut libero malesuada feugiat. 
@@ -179,7 +186,7 @@
         </div>
         <!-- ANTRA EIL UP -->
         <!-- TRECIA EIL DOWN -->
-        <div class='flex-containeris100'>
+        <div class='flex-containeris'>
             <div class='Boxas70'>
                 <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogodownload.org%2Fwp-content%2Fuploads%2F2014%2F09%2Fgoogle-logo-1.png&f=1&nofb=1' alt='Pirmas paveiksliukas' width='500' height='250'>
                 <img src='img/pirmas_paveiksliukas.jpg' alt='Antras paveiksliukas' width='500' heigth='250'>
@@ -196,7 +203,7 @@
         <!-- TRECIA EIL UP -->
         <!-- KETVIRTA EIL DOWN -->
 
-        <div class='flex-containeris100'>
+        <div class='flex-containeris'>
             <div class='Boxas30Proc'>
                 <h1>Antra paskaita</h1>
                 <a href='https://google.lt' target='_blank'>Einame i Google Naujas Tab'as</a><br>
