@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indiexas Play</title>
+    <title>Indiexas Naujas</title>
 
     <style>
         * {
@@ -37,6 +37,9 @@
         .col-6 {
             width: 50%;
         }
+        .col-6Stable {
+            width: 50%;
+        }
         .col-7 {
             width: 58.33%;
         }
@@ -59,8 +62,13 @@
             width: 100%;
         }
 
+        .centrTxT {
+            /* text-align: center; */
+            list-style-position: inside;
+        }
+
         .PilkBack {
-            background-color: dimgray;
+            background-color: lightgrey ;
         }
 
         .AquaBack {
@@ -71,7 +79,7 @@
         [class*="col-"] {
             /* display: flex; */
             float: left;
-            padding: 5px;
+            padding: 5px ;
             border: solid 1px grey;
             justify-content: center;
             align-self: center;
@@ -89,17 +97,26 @@
             max-height: auto;
         }
 
+        p {
+            font-size: 12px;
+            color: gray;
+        }
+
+        a {
+            font-size: 3.5mm;
+        }
+
         @media all and (max-width: 800px) {
             .container {
                 /* display: flex; */
                 flex-flow: column wrap;
             }
-            [class*="col-"] {
+            [class*="col-"]:not(.col-6Stable) {
                 width: 100%;
             }
-            .Lastas {
+            /* .col-6Stable {
                 order: 1;
-            }
+            } */
         }
 
     </style>
@@ -114,7 +131,7 @@
                 <p class='IsskirtTxt'>Minimali struktura play</p>
             </div>
 
-            <div class='col-6 PilkBack'>
+            <div class='col-6Stable PilkBack'>
                 <p>Stulpelis</p>
                 <p>Stulpelis</p>
                 <p>Stulpelis</p>
@@ -122,14 +139,14 @@
                 <p>Stulpelis</p>
             </div>
 
-            <div class='col-6 AquaBack'>
+            <div class='col-6Stable AquaBack'>
                 <p>Stulpelis</p>
             </div>
         </div>
 <!-- PIRMA EIL UP -->
 <!-- ANTRA EIL DOWN -->
         <div class='col-12'>
-            <div class='col-6 Lastas'>
+            <div class='col-6'>
                 <h1>This is a Heading</h1>
                 <h2>This is a Heading</h2>
                 <h3>This is a Heading</h3>
@@ -140,17 +157,38 @@
             </div>
 
             <div class='col-6'>
-                <p>2-2</p>
+                <p>
+                    Vivamus magna justo, lacinia eget consectetur sed, 
+                convallis at tellus. <br> Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. 
+                Nulla quis lorem ut libero malesuada feugiat. 
+                Nulla quis lorem ut libero malesuada feugiat. 
+                Vestibulum ante ipsum primis in faucibus orci luctus et 
+                ultrices posuere cubilia Curae; Donec velit neque, 
+                auctor sit amet aliquam vel, ullamcorper sit amet ligula. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Quisque velit nisi, pretium ut lacinia in, elementum id enim. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+                Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Sed porttitor lectus nibh. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus suscipit tortor eget felis porttitor volutpat.
+                </p>
             </div>
         </div>
 <!-- ANTRA EIL UP -->
 <!-- TRECIA EIL DOWN -->
         <div class='col-12'>
             <div class='col-70Pr'>
-                <p>3-70</p>
+                <!-- <p>3-70</p> -->
+                <div>
+                    <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogodownload.org%2Fwp-content%2Fuploads%2F2014%2F09%2Fgoogle-logo-1.png&f=1&nofb=1' alt='cia turejo buti google pic'>
+                </div>
+                <div>
+                    <img src='img/pirmas_paveiksliukas.jpg' alt='Cia turejo buti Antras paveiksliukas'>
+                </div>
             </div>
 
             <div class='col-30Pr'>
+                <span>Tekstas su zyma span</span>
                 <img src='https://gameplanet-53f8.kxcdn.com/media/catalog/product/cache/6/image/9df78eab33525d08d6e5fb8d27136e95/m/a/maxi-poster-mario-bros-run.jpg' alt='kazkoks paveiksliukas'>
                 </a>
                 <p>3-30</p>
@@ -160,15 +198,40 @@
 <!-- KETVIRTA EIL DOWN -->
         <div class='col-12'>
             <div class='col-4'>
-                <p>4-1</p>
+                <h1>Antra paskaita</h1>
             </div>
 
             <div class='col-4'>
-                <p>4-2</p>
+                <!-- <p>4-2</p> -->
+                <a href='https://google.lt' target="_blank">
+                    Einam i google.lt (naujame tabe)
+                </a>
+                <br>
+                <a href='https://google.com' target="_parent">
+                    Einam i google.com (be naujo tabo)</a>
+                <br>
+                <a href='about.html' target="_blank">
+                    Einame i vidini about kurio nera (naujame tabe
+                </a>
+                <br>
+                <a href='about.html'>
+                    Einame i vidini about kurio nera (be naujo tabo)
+                </a>
             </div>
 
             <div class='col-4'>
-                <p>4-3</p>
+                <!-- <p>4-3</p> -->
+                <ol class='centrTxT'>
+                    <li>Duona</li>
+                    <li>Obuoliai</li>
+                    <li>Cukrus</li>
+                </ol>
+                <br>
+                <ul class='centrTxT'>
+                    <li>Kava</li>
+                    <li>Arbata</li>
+                    <li>Kokosu sriuba</li>
+                </ul>
             </div>
         </div>
 <!-- KETVIRTA EIL UP -->
